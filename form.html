@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(document).ready(function(){
+        $("#p").mousedown(function(){
+            alert("success");
+        });
+    });
+  </script>
+  <style>
+    .input-group-addon{
+        color:black;
+        font-size: 20px;
+        background-color:rgb(245, 8, 8);
+    }
+    .a1{
+        color:rgb(0, 0, 0) ;
+    }
+    .p{
+            background-image: linear-gradient(to left,rgba(17, 17, 228, 0.858),rgb(232, 13, 105),rgb(206, 219, 25),rgba(21, 38, 223, 0.977));
+            background-size: 400% 400%;
+            animation: color 10s ease-in-out infinite;
+        }
+        @keyframes color{
+            0%{
+                background-position:0 50%;
+            }
+            50%{
+                background-position: 50% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+        }
+  </style>
+</head>
+<body class="p">
+    <center>
+<b><legend>Register Form</legend></b>
+</center>
+<div class="container mt-3">
+<form action="/action_page.php">
+<div class="mb-3 mt-3">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input id="name" type="name" class="form-control" name="name" placeholder="First Name">
+      </div>
+</div><br>
+<div class="mb-3">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input id="name" type="name" class="form-control" name="name" placeholder="Father Name">
+      </div>
+</div><br>
+<div class="mb-3">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input id="name" type="name" class="form-control" name="name" placeholder="Last Name">
+      </div>
+</div><br>
+<div class="row">
+    <div class="col"> 
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+        <input id="email" type="email" class="form-control" name="email" placeholder="Email Id">
+      </div>
+    </div><br>
+<div class="col">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="name" placeholder="Password">
+      </div>
+</div>
+</div><br>
+<div class="row">
+    <div class="col">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            <input id="name" type="date" class="form-control" name="name" placeholder="Date Of Birth">
+          </div>
+    </div>
+    <div class="col">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-font"></i></span>
+            <input id="name" type="number" class="form-control" name="name" placeholder="Age">
+          </div>
+    </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                <input id="name" type="text" class="form-control" name="name" placeholder="Mobile No.1">
+              </div>
+        </div>
+        <div class="col">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                <input id="name" type="text" class="form-control" name="name" placeholder="Mobile No.2">
+              </div>
+        </div>
+
+            <div class="col">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-globe"></i></span>
+                    <input id="name" type="text" class="form-control" name="name" placeholder="State">
+            </div>
+            </div>
+            </div><br>
+<div class="mb-3 mt-3">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-home"></i></span>
+        <input id="name" type="name" class="form-control" name="name" placeholder="Home.No/Block.No">
+      </div>
+</div><br>
+<div class="mb-3 mt-3">
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-location-arrow"></i></span>
+        <input id="name" type="name" class="form-control" name="name" placeholder="Address">
+      </div>
+</div><br>
+<div class="a1">
+<label for="Subject">City:</label>
+</div>
+<select name="City" id="City">
+<option value="Chose">Ahmedabad</option>
+<option value="Vadodra">Vadodra</option>
+<option value="Surat">Surat</option>
+<option value="Mumbai">Mumbai</option>
+<option value="Rajkot">Rajkot</option>
+</select><br><br>
+<div class="a1">
+<label for="Name">Gender:</label>
+<input type="radio" name="Gender">Female
+<input type="radio" name="Gender">Male<br><br>
+</div>
+<a><p id="p"><button>Submit</a></button></p>
+<div class="a1">
+<p><label for="Review">Your Review</label></p>
+<textarea id="Review" name="Review" rows="4" cols="50"></textarea>
+</div>
+</form>
+</body>
+</html>
